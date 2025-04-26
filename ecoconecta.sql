@@ -21,13 +21,6 @@ SET time_zone = "+00:00";
 -- Database: `ecoconecta`
 --
 
---
--- Integrantes:
--- Brayan Jair Enriquez Pastas
--- Jeisson Hernan Ojeda Piando
--- Maryuri Idaly Ortiz Diaz
--- Oscar Steven López Noguera
-
 -- --------------------------------------------------------
 
 CREATE DATABASE ecoconecta;
