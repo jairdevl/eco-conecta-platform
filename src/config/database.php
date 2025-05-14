@@ -1,11 +1,19 @@
 <?php
 
+/* Local connection
+$host = "Localhost";
+$port = "5432";
+$dbname = "ecoconecta";
+$username = "postgres";
+$password = "unicesmag";
+*/
+
 // Supabase connection
 $host = "aws-0-us-east-2.pooler.supabase.com";
 $port = "6543";
 $dbname = "postgres";
-$username = "postgres.avuspyuebeemhsonblpp";
-$password = "unicesmag$$";
+$username = "postgres.waygmyvdeqjfdddwzxpb";
+$password = "ecoconecta$$";
 
 // Connection string
 $data_connection = "
