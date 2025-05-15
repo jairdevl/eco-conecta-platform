@@ -13,4 +13,8 @@ $password = $_POST['password'];
 //$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 $hashed_password = $password;
 
+// Check if email already exists
+$sql = "SELECT count(id) FROM users WHERE email = '$email' and status = true";
+$result = pg_query($conn, $sql);
+
 ?>
