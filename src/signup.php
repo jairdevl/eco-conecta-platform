@@ -17,4 +17,24 @@ $hashed_password = $password;
 $sql = "SELECT count(id) FROM users WHERE email = '$email' and status = true";
 $result = pg_query($conn, $sql);
 
+if($result) {
+    $count = pg_fetch_assoc($result);
+    if($count['count' > 0]) {
+        echo "Email already exists";
+    } else {
+        // Insert new user
+        $sql = "INSERT  INTO users (firstname, lastname, email, password)
+        VALUES ('$firstname', '$lastname', '$email', '$hashed_password')";
+
+        if(pg_query($conn, $sql)) {
+            echo "<script>alert('User created successfully. Go to Sign In');</script>";
+            header("Refresh: 0; url=http://localhost/eco-conecta-platform/src/signin.html");
+        } else {
+            echo "Error creating user: " . pg_last_error($conn);
+        }
+    }
+} else {
+    echo "Error validating email";
+}
+
 ?>
