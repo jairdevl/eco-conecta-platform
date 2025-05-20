@@ -19,7 +19,7 @@ $password = "ecoconecta$$";
 $data_connection = "
 host = $host
 port = $port
-dbbname = $dbname
+dbname = $dbname
 user = $username
 password = $password
 ";
