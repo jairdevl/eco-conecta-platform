@@ -1,11 +1,12 @@
 <?php
 
 /* Supabase connection
-$host = 'aws-0-us-east-2.pooler.supabase.com';
-$port = '6543';
-$dbname = 'postgres';
-$username = 'postgres.waygmyvdeqjfdddwzxpb';
-$password = 'ecoconecta@@';
+$host = "aws-0-us-east-2.pooler.supabase.com";
+$port = "6543";
+$dbname = "postgres";
+$username = "postgres.waygmyvdeqjfdddwzxpb";
+$password = "ecoconecta$$";
+
 */
 
 // Database connection
